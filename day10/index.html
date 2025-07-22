@@ -3,36 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="calculator">
-      <input type="text" id="display" readonly value="0" />
-      <div class="calc-buttons">
-        <button class="calc-button command" onclick="clearExp()">C</button>
-        <button class="calc-button command" onclick="back()">D</button>
-        <button class="calc-button" onclick="addToExp('%')">%</button>
-        <button class="calc-button" onclick="addToExp('/')">/</button>
-        <button class="calc-button" onclick="addToExp(7)">7</button>
-        <button class="calc-button" onclick="addToExp(8)">8</button>
-        <button class="calc-button" onclick="addToExp(9)">9</button>
-        <button class="calc-button" onclick="addToExp('*')">*</button>
-        <button class="calc-button" onclick="addToExp(4)">4</button>
-        <button class="calc-button" onclick="addToExp(5)">5</button>
-        <button class="calc-button" onclick="addToExp(6)">6</button>
-        <button class="calc-button" onclick="addToExp('-')">-</button>
-        <button class="calc-button" onclick="addToExp(1)">1</button>
-        <button class="calc-button" onclick="addToExp(2)">2</button>
-        <button class="calc-button" onclick="addToExp(3)">3</button>
-        <button class="calc-button" onclick="addToExp('+')">+</button>
-        <button class="calc-button" onclick="addToExp('00')">00</button>
-        <button class="calc-button" onclick="addToExp(0)">0</button>
-        <button class="calc-button" onclick="addToExp('.')">.</button>
-        <button class="calc-button result" onclick="showResult()">=</button>
+    <div class="container">
+      <div class="slider">
+        <div class="image-container">
+          <img src="banner1.jpg" alt="Banner 1" />
+          <img src="banner2.jpg" alt="Banner 2" />
+          <img src="banner3.jpg" alt="Banner 3" />
+          <img src="banner4.jpg" alt="Banner 4" />
+        </div>
+        <div class="button-container">
+          <button class="prev" onclick="Slide(-1)">
+            <img src="left-arrow.png" alt="Previous" />
+          </button>
+          <button class="next" onclick="Slide(1)">
+            <img src="right-arrow.png" alt="Next" />
+          </button>
+        </div>
       </div>
     </div>
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
